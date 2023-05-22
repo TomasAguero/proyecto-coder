@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: line-through;
+    color: antiquewhite;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*======PROYECTO======*/
+
+.fondo-header {
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: sticky;
+    top: 0px;
+}
+
+.iniciar-sesion {
+    display: flex;
+    margin: 18px;
+    gap: 10px;
+}
+
+.flex-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.portada-termos {
+    height: 70.9vh;
+    overflow: auto;
+    background-image: url(../img/termosx1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+}
+
+.portada-comprar {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: blanchedalmond;
+    margin: 50px;
+    border-radius: 40px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-1 {
+    margin: 100px;
+    color: beige;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes-somos {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.site-footer {
+    background-color: #bebebe1c;
+    color: #ffffff94;
+    padding: 5px;
+}
+
+.site-footer__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.site-footer__section {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.site-footer__heading {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.site-footer__text {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.site-footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer__item {
+    margin-bottom: 0px;
+    padding-right: 58px;
+    margin-top: 15px;
+}
+
+.site-footer__link {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 46%;
+    align-content: center;
+}
+
+.site-footer__social-list {
+    list-style: none;
+    padding: 10px;
+    padding-left: 249px;
+}
+
+.site-footer__social-item {
+    margin-right: 10px;
+}
+
+.site-footer__social-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+.site-footer__social-link--facebook {
+    color: #3b5998;
+}
+
+.site-footer__social-link--twitter {
+    color: #00aced;
+}
+
+.site-footer__social-link--instagram {
+    color: #517
+}
+
+/*PRODUCTOS*/
+
+
+.titulo-productos {
+    color: #000000;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.productos {
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 193, 124);
+    padding: 30px;
+    text-align: center;
+}
+
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+
+.producto {
+    background-color: #000000;
+    padding: 50px;
+    margin: 5px;
+}
+
+.producto img {
+    width: 80%;
+
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.producto ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.producto li {
+    margin-bottom: 10px;
+}
+
+.producto button {
+    text-align: center;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.garantia-titulo {
+    color: rgba(255, 255, 255, 0.918);
+    background-color: #e6d7d70e;
+    text-align: center;
+    padding: 40px;
+}
+
+.cambios {
+    color: #ebe5e5;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.info-garantia {
+    color: rgb(190, 201, 211);
+    padding-left: 10px;
+    margin: 19px;
+    margin-top: 50px;
+}
+
+.cambios-garamtia {
+    color: #ebe5e5;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.info-cambios {
+    color: #ebe5e5;
+    margin-top: 60px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preguntas {
+    width: 80%;
+    background-color: #ffffffbb;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.preguntas h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.preguntas p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.preguntas ul {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.preguntas li {
+    margin-bottom: 5px;
+}
+
+.contacto {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h2 {
+    margin-bottom: 1rem;
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto-opciones {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto-opciones li {
+    margin-bottom: 1rem;
+}
+
+.contacto-opciones a {
+    color: #fff;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto label {
+    margin-bottom: 0.5rem;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 200%;
+    height: 100%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.contacto input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: #ee4545;
+    color: #fff;
+}
+
