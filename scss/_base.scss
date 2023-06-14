@@ -1,0 +1,28 @@
+
+
+
+$colorfondo: black;
+$colornav: #fce2bc;
+$colortext: #ffffff;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $colornav;
+}
+
+body {
+background-color: $colorfondo;
+}
+
+

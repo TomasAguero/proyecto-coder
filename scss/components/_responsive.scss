@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px) {
+    .fondo-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .iniciar-sesion {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+    }
+
+    .flex-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .portada-termos {
+        height: auto;
+        min-height: 200px;
+        background-position: top;
+        align-items: center;
+    }
+
+    .portada-comprar {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .caja-1 {
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .quienes-somos {
+        width: 100%;
+    }
+
+    .google-maps {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .producto {
+        padding: 30px;
+    }
+
+    .preguntas {
+        width: 100%;
+    }
+
+    .site-footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-footer__section {
+        flex: 1 0 250px;
+        margin: 10px;
+    }
+
+    .site-footer__heading {
+        text-align: center;
+    }
+
+    .site-footer__text {
+        text-align: center;
+    }
+
+    .site-footer__list {
+        padding-right: 50px;
+        text-align: center;
+    }
+
+    .site-footer__item {
+        margin-bottom: 5px;
+    }
+
+    .site-footer__link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .site-footer__social-list {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .site-footer__social-item {
+        margin-right: 10px;
+    }
+
+    .site-footer__social-link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .site-footer__social-link--facebook {
+        color: #3b5998;
+    }
+
+    .site-footer__social-link--twitter {
+        color: #00aced;
+    }
+
+    .site-footer__social-link--instagram {
+        color: #517;
+    }
+}

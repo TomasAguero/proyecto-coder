@@ -9,39 +9,36 @@ ol {
 }
 
 a {
-    text-decoration: line-through;
-    color: antiquewhite;
+    text-decoration: none;
+    color: #fce2bc;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
-
-/*======PROYECTO======*/
 
 .fondo-header {
     background-color: black;
-    color: antiquewhite;
+    color: #fce2bc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px 0 30px;
+    padding: 30px 30px 15px 10px;
     position: sticky;
-    top: 0px;
 }
 
-.iniciar-sesion {
-    display: flex;
-    margin: 18px;
-    gap: 10px;
-}
-
-.flex-nav {
+.fondo-header .flex-nav {
     display: flex;
     gap: 15px;
     justify-content: center;
 }
 
+.fondo-header .iniciar-sesion {
+    display: flex;
+    margin: 18px;
+    gap: 10px;
+    color: #fce2bc;
+}
 
 .portada-termos {
     height: 70.9vh;
@@ -54,48 +51,68 @@ body {
     align-items: self-end;
 }
 
-.portada-comprar {
+.portada-termos .portada-comprar {
     background-color: rgba(0, 0, 0, 0.747);
-    color: blanchedalmond;
-    margin: 50px;
+    color: #ffebcd;
+    margin-bottom: 80px;
+    padding: 20px;
     border-radius: 40px;
     width: 170px;
     height: 50px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .caja-1 {
-    margin: 100px 100px 50px 100px;
     color: beige;
     background-color: black;
+    margin: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
+    font-style: italic;
 }
 
-
-.column {
-    display: flex;
-    flex-direction: column;
+.caja-1 .quienes-somos {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
 }
 
-.quienes-somos {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-/*---------footer-------*/
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
 
 .site-footer {
-    background-color: #bebebe1c;
-    color: #ffffff94;
+    background-color: rgba(190, 190, 190, 0.1098039216);
+    color: rgba(255, 255, 255, 0.5803921569);
     padding-bottom: 50px;
 }
 
@@ -163,40 +180,37 @@ body {
 }
 
 .site-footer__social-link--instagram {
-    color: #517
+    color: #517;
 }
 
-/*PRODUCTOS*/
-
 .titulo-productos {
-    color: #000000;
+    color: #fdfdfd;
     margin-bottom: 25px;
     margin-top: 5px;
 }
 
 .productos {
     color: rgb(255, 255, 255);
-    background-color: rgb(250, 193, 124);
+    background-color: rgb(0, 0, 0);
     padding: 30px;
     text-align: center;
 }
 
-
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
+    grid-gap: 50px;
 }
 
 .producto {
     background-color: #000000;
     padding: 50px;
     margin: 5px;
+    border-style: double;
 }
 
 .producto img {
-    width: 80%;
-
+    width: 100%;
 }
 
 .producto h3 {
@@ -224,82 +238,61 @@ body {
     border-radius: 3px;
 }
 
-/*-------GARANTIA-------*/
-
 .garantia-titulo {
     color: rgba(255, 255, 255, 0.918);
-    background-color: #e6d7d70e;
+    background-color: rgba(230, 215, 215, 0.0549019608);
     text-align: center;
-    padding: 40px;
+    padding: 50px;
 }
 
-.cambios {
-    color: #ebe5e5;
-    font-size: 25px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.info-garantia {
-    color: rgb(190, 201, 211);
-    padding-left: 10px;
-    margin: 19px;
-    margin-top: 50px;
-}
-
-.cambios-garamtia {
-    color: #ebe5e5;
-    margin-top: 150px;
-    text-align: center;
-}
-
-.info-cambios {
+p {
     color: #ebe5e5;
     margin-top: 60px;
     font-size: 20px;
     padding-left: 40px;
+    margin-bottom: 50px;
 }
-
-/*--------FAQ-------*/
 
 .faq {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
-.preguntas {
-    width: 80%;
-    background-color: #ffffffbb;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding: 20px;
+.faq .preguntas {
+    width: 78%;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px rgb(251, 255, 0);
 }
 
-.preguntas h3 {
+.faq .preguntas h3 {
+    color: aliceblue;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.preguntas p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.faq .preguntas p {
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.preguntas ul {
+.faq .preguntas ul {
     text-align: left;
     margin-left: 30px;
     font-size: 18px;
+    color: #ffffff;
 }
 
-.preguntas li {
+.faq .preguntas li {
+    color: #ffffff;
     margin-bottom: 5px;
 }
-
-/*----------CONTACTO---------*/
 
 .contacto {
     background-color: #000;
@@ -311,25 +304,28 @@ body {
 }
 
 .contacto h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contacto h3 {
+    margin-bottom: 20px;
 }
 
 .contacto p {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: s2rem;
 }
 
-.contacto-opciones {
-    list-style: none;
+.contacto .contacto-opciones {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.contacto-opciones li {
+.contacto li {
     margin-bottom: 1rem;
 }
 
-.contacto-opciones a {
+.contacto a {
     color: #fff;
 }
 
@@ -343,8 +339,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.contacto input[type="text"],
-.contacto input[type="email"],
+.contacto input[type=text],
+.contacto input[type=email],
 .contacto textarea {
     width: 200%;
     height: 100%;
@@ -355,7 +351,7 @@ body {
     color: #fff;
 }
 
-.contacto input[type="submit"] {
+.contacto input[type=submit] {
     padding: 0.5rem 1rem;
     background-color: #fff;
     color: #000;
@@ -363,19 +359,16 @@ body {
     cursor: pointer;
 }
 
-.contacto input[type="submit"]:hover {
+.contacto input[type=submit]:hover {
     background-color: #ee4545;
     color: #fff;
 }
-
-/*-------RESPONSIVE--------*/
 
 @media screen and (max-width: 768px) {
     .fondo-header {
         flex-direction: column;
         align-items: center;
     }
-
 
     .iniciar-sesion {
         flex-direction: row;
@@ -415,11 +408,11 @@ body {
         width: 100%;
     }
 
-.google-maps {
-display: flex;
-align-items: center;
-width: 100%;
-}
+    .google-maps {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
 
     .productos-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -453,7 +446,7 @@ width: 100%;
     }
 
     .site-footer__list {
-padding-right: 50px;
+        padding-right: 50px;
         text-align: center;
     }
 
@@ -493,3 +486,5 @@ padding-right: 50px;
         color: #517;
     }
 }
+
+/*# sourceMappingURL=styles.css.map */

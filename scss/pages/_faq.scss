@@ -1,0 +1,41 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+.preguntas {
+
+    width: 78%;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgb(251, 255, 0);
+
+    h3 {
+        color: aliceblue;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color:$colortext;
+    }
+
+    ul {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 18px;
+        color: $colortext;
+    }
+
+    li {
+color: $colortext;
+        margin-bottom: 5px;
+    }
+}
+}
